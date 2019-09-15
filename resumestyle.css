@@ -449,6 +449,20 @@ html
 		 margin-left:900px;
 		 
 	 }
+
+@media (min-width:600px)
+{
+.profilefonts
+	 {
+		 margin-top:5px;
+		 margin-left:900px;
+		 
+	 }
+
+
+}
+
+
 	 
 	 i
      {
