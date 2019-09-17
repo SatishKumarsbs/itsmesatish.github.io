@@ -211,25 +211,32 @@ html
 		background-color: #b2b2b2;
 	}
 	
-	.figma
+	.java
 	{
-	width:95%;
+	width:85%;
+	}
+	
+	.jsp
+	{
+	width:70%;
 	}
 	
 	.html{
-	width:90%;
+	    width: 90%;
 	}
 	
-	.css{
-	    width: 85%;
+	.css
+	{
+	width:85%;
 	}
 	
-	.javascript{
-	    width:95%;
-	}
-	
-	.java{
+	.Javascript{
 	    width:70%;
+	}
+	
+	.datastructure
+	{
+	    width:50%;
 	}
 	
 	.folio h3{
