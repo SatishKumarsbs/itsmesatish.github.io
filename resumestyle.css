@@ -42,6 +42,28 @@ html
 		contrast(100%);
 		filter:  contrast(120%) brightness(90%)
 		}
+
+        h3{
+		animation: type 3s steps(21);
+		overflow:hidden;
+		white-space:nowrap;
+		font-family:consolas;
+		border-right: 4px solid #66ccff;
+		
+		}
+		
+		@keyframes type
+		{
+		    0%
+			{
+			width:0ch;
+			}
+			100%
+			{
+			width:21ch;
+			}
+		}
+
 		
 	.folio img
 	{
