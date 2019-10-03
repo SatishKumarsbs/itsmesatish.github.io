@@ -45,8 +45,9 @@ html {
     background-size:     cover;                      
     background-repeat:   no-repeat;
     background-position: center center;          
-    box-shadow: -20px -20px 20px rgba(0, 0, 0, .5);
-    //transition: .5s;
+    //box-shadow: -20px -20px 20px rgba(0, 0, 0, .5);
+	box-shadow:0 0 30px white;
+    //transition: .1s;
 		
 	}
 		
@@ -279,6 +280,7 @@ html {
 		letter-spacing:1px;
 		font-weight:500;
 		margin-left:110px;
+	
 		
 	}
 	
@@ -292,6 +294,7 @@ html {
 	.skills1 h2,
 	.experience h2
 	{
+		//margin-top:20px;
 	    font-family:  'Hoefler Text', Georgia, 'Times New Roman', serif;
         font-weight: normal;
         font-size: 1.75em;
