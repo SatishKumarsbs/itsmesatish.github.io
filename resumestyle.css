@@ -36,20 +36,35 @@ html {
 	    width: 100%;
 	}
 	
+	
 	.home img
-	   {
-	    width: 40%;
-		border-radius:60%;
-		-webkit-filter: grayscale(100%)
-		contrast(100%);
-		filter:  contrast(120%) brightness(90%)
+	{
+	position: relative;
+    width: 40%;
+    border-radius:60%;
+    background-size:     cover;                      
+    background-repeat:   no-repeat;
+    background-position: center center;          
+    box-shadow: -20px -20px 20px rgba(0, 0, 0, .5);
+    //transition: .5s;
 		
-	   }
+	}
 		
-		
+	
+	
+
+
+
+
+
+
+
+
+
+
 	#Text{
 		
-		animation: type 5s  linear infinite;
+		animation: type 7s  linear infinite;
 		overflow:hidden;
 		font-size:20px;
 		white-space:nowrap;
@@ -179,12 +194,14 @@ html {
 	
 	main
 	{
+	max-height:100vh;	
 	 max-width:980px;
 	 //background: #000;
 	 margin-left: 200px;
 	 padding:12px 50px 12px 50px;
 	 animation: bgColor 20s linear infinite;
 	}
+	
 	
 	header
 	{
@@ -249,21 +266,24 @@ html {
 		
 	}
 	
-	
-	
-	
+
 	.about,
 	.folio,
 	.contact,
 	.academic,
 	.skills1,
 	.experience
-	{
+	{   
+	    min-height:700px;
 	    line-height:1.5em;
 		letter-spacing:1px;
-		font-weight:300;
+		font-weight:500;
 		margin-left:110px;
+		
 	}
+	
+	
+	
 	
 	.about h2,
 	.folio h2,
@@ -272,16 +292,30 @@ html {
 	.skills1 h2,
 	.experience h2
 	{
-	    font-weight:300;
-		text-transform: uppercase;
-		text-decoration:line-through;
-		padding-bottom:10px;
-		margin:100px 0 0 0;
-		letter-spacing: 4px;
+	    font-family:  'Hoefler Text', Georgia, 'Times New Roman', serif;
+        font-weight: normal;
+        font-size: 1.75em;
+        letter-spacing: .2em;
+        line-height: 1.1em;
+        margin:0px;
+        //text-align: center;
+        text-transform: uppercase;
+		text-shadow:75px 20px 54px grey;
+        text-decoration: overline;
 	}
 	
 	.about p{
-	    color: #b2b2b2;
+	    color: white;
+	}
+	
+	.line::before
+	{
+		content:"";
+		height:110px;
+		width:5px;
+		background: #009688;
+		float: left;
+		margin-right: 15px;
 	}
 	
 	.about span {
@@ -378,65 +412,76 @@ html {
 	 color:#b2b2b2;
 	 }
 	 
-	 form input[type="text"],
-	 select,
-	 textarea{
-	    width: 100%;
-		padding: 12px;
-		border: none;
-		border: 1px solid #222;
-		background: transparent;
-		margin-top: 6px;
-		margin-bottom: 16px;
-		resize: vertical;
-		color:#b2b2b2;
-	 }
-	form input[type="text"]:focus,
-    textarea:focus
+	 
+	 
+	.contact-form
 	{
-	outline:none;
-	border:1px solid #009688;
-	}
+		margin-top:20px;
+		height:20%;
+        width: 50%;
+        background: #f1f1f1;
+        padding: 30px 40px;
+        box-sizing: border-box;
+        border-radius: 8px;
+        text-align: center;
+        box-shadow: 0 0 20px #000000b3;
+        font-family: "Montserrat",sans-serif;
+		color:black;
+    }
+    .contact-form h1{
+    margin-top: 0;
+    font-weight: 200;
+}
+.txtb{
+  border:1px solid gray;
+  margin: 8px 0;
+  padding: 12px 18px;
+  border-radius: 8px;
+}
+.txtb label{
+  display: block;
+  text-align: left;
+  color: #333;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+.txtb input,.txtb textarea{
+  width: 100%;
+  border: none;
+  background: none;
+  outline: none;
+  font-size: 18px;
+  margin-top: 6px;
+}
+
+
 	
-	input[type="submit"] 
-	{
-	background-color: transparent;
-	color: #b2b2b2;
-	text-transform: uppercase;
-	padding: 12px 20px;
-	border: 1px solid #222;
-	cursor:pointer;
-	transition: all 0.35s;
-	
-	}
 	
 	input[type="submit"]
 	{
-	    background-color:transparent;
+	    background-color:#2471A3;
 		color: #b2b2b2;
 		text-transform: uppercase;
 		padding: 12px 20px;
-		border: 1px solid #222;
+		border: 1px solid #884EA0;
 		cursor: pointer;
-		transition: all 0.35s;
+		transition: all 0.35s;	
+		height:40px;
+		width:200px;
+		
+		
 		
 	}
 	 input[type="submit"]:hover
 	 {
-	 background-color:#b2b2b2;
+	 background-color:#F1948A;
 	 color:#222;
+	 box-shadow: 0 0 10px #000000b3;
 	 }
 	 
 	 
 	 
-	.contact .container
-    {
-		margin-top: 20px;
-		margin-bottom: 100px;
-		background: transparent;
-		padding: 20px 0;
-		width:98%;
-	}	
+		
 	.footer
 	{
 		border-top: 5px solid red;
@@ -492,7 +537,7 @@ html {
 			margin: 0 auto;
 			padding: 12px 25px;
 		}
-		
+			
 		header
 		{
 			margin-top: 80px;
@@ -556,17 +601,16 @@ html {
 		 
 	 }
 
-@media (min-width:600px)
-{
-.profilefonts
-	 {
+    @media (min-width:600px)
+    {
+    .profilefonts
+	{
 		 margin-top:5px;
 		 margin-left:500px;
 		 
-	 }
-
-
-}
+	}
+	 
+	}
 
 
 	 
