@@ -279,7 +279,7 @@ html {
 	.skills1,
 	.experience
 	{   
-	    min-height:700px;
+	    min-height:800px;
 	    line-height:1.5em;
 		letter-spacing:1px;
 		font-weight:500;
@@ -424,8 +424,8 @@ html {
 	 
 	.contact-form
 	{
-		margin-top:40px;
-		height:20%;
+		margin-top:20px;
+		height:15%;
         width: 80%;
 		opacity: 0.8;
         background:white ;
@@ -445,7 +445,7 @@ html {
 	//opacity: 0.5;
 	filter: alpha(opacity=50); /* For IE8 and earlier */
 	background-position: right top;
-	min-height:700px;
+	min-height:600px;
 	line-height:1.5em;
     letter-spacing:1px;
     font-weight:500;
@@ -854,8 +854,8 @@ html {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background:#85C1E9 ;
-	opacity: 0.5;
+	background:#A569BD    ;
+	//opacity: 0.5;
 }
 
 .box:before
