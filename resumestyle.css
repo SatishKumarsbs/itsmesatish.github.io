@@ -204,7 +204,7 @@ html {
 	 //background: #000;
 	 margin-left: 200px;
 	 padding:12px 50px 12px 50px;
-	 
+	 //animation: bgColor 20s linear infinite;
 	}
 	
 	
@@ -274,7 +274,7 @@ html {
 
 	.about,
 	.folio,
-	.contact,
+	
 	.academic,
 	.skills1,
 	.experience
@@ -307,7 +307,7 @@ html {
         margin:0px;
         //text-align: center;
         text-transform: uppercase;
-		text-shadow:75px 20px 54px grey;
+		//text-shadow:75px 20px 54px grey;
         text-decoration: overline;
 	}
 	
@@ -339,6 +339,7 @@ html {
 	{
 	width: 100%;
 	background-attachment:#b2b2b2;
+	background:white;
 	
 	}
 	
@@ -423,10 +424,11 @@ html {
 	 
 	.contact-form
 	{
-		margin-top:20px;
+		margin-top:40px;
 		height:20%;
-        width: 50%;
-        background: #f1f1f1;
+        width: 80%;
+		opacity: 0.8;
+        background:white ;
         padding: 30px 40px;
         box-sizing: border-box;
         border-radius: 8px;
@@ -435,6 +437,29 @@ html {
         font-family: "Montserrat",sans-serif;
 		color:black;
     }
+	
+    .contact
+	{
+	background-image: url("map.jpg");
+	background-repeat: no-repeat;
+	//opacity: 0.5;
+	filter: alpha(opacity=50); /* For IE8 and earlier */
+	background-position: right top;
+	min-height:700px;
+	line-height:1.5em;
+    letter-spacing:1px;
+    font-weight:500;
+    margin-left:110px;
+	}
+.content
+{
+	padding:20px;
+	box-sizing: border-box;
+	color:#fff;
+}
+	
+	
+	
     .contact-form h1{
     margin-top: 0;
     font-weight: 200;
@@ -467,7 +492,9 @@ html {
 	input[type="submit"]
 	{
 	    background-color:#2471A3;
-		color: #b2b2b2;
+		color: #1C2833;
+		font-size:20px;
+		font-weight: bold;
 		text-transform: uppercase;
 		padding: 12px 20px;
 		border: 1px solid #884EA0;
@@ -782,6 +809,13 @@ html {
 	animation: animate 12s linear infinite;
 }
 
+
+
+
+
+
+
+
 @keyframes animate
 {
 	0%
@@ -796,3 +830,83 @@ html {
 	    opacity: 0;
 	}
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+.box
+{
+	margin-top:30px;
+	//margin-left:200px;
+	position: relative;
+	width: 80%;
+	border-radius: 8px;
+	height:auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background:#85C1E9 ;
+	opacity: 0.5;
+}
+
+.box:before
+{
+	content: '';
+	position: absolute;
+	top: -2px;
+	left:-2px;
+	right: -2px;
+	bottom: -2px;
+	background: #fff;
+	z-index:-1;
+	border-radius: 8px;
+}
+
+.box:after
+{
+	content: '';
+	position: absolute;
+	top: -2px;
+	left:-2px;
+	right: -2px;
+	bottom: -2px;
+	background: #fff;
+	z-index:-2;
+	filter:blur(40px);
+	border-radius: 8px;
+}
+.box:before,
+.box:after
+{
+	background: linear-gradient(235deg,#89ff00,#060c21,#00bcd4);
+	
+}
+
+.content
+{
+	padding:20px;
+	box-sizing: border-box;
+	color:#fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
