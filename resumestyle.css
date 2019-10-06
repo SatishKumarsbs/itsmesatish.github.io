@@ -153,21 +153,28 @@ html {
 		height:30px;
 		width:100px;
 		padding	:10px 0;
-		
-		
+	}
+	.navmenu li
+	{
+	list-style:none;	
 	}
 	aside a
 	{
-	    display:black;
-        padding	:20px 0;
+	    display:block;
+        padding	:10px 0;
 		color:white;
 		transition:all 0.35s;
 		text-transform: uppercase;
 		font-size: 0.75em;
-		letter-spacing:2px;
-		
-		
+		letter-spacing:2px;		
 	}
+	
+	li.active a
+	{
+	background:black;
+    color:white;	
+	}
+	
 	
 	aside p
 	{
@@ -182,15 +189,12 @@ html {
 	
 	}
 	
-	aside nav a:nth-child(2)
+	
+	
+	aside nav a:hover
 	{
 	    background: #000;
-	}
-	
-	aside nav a:nth-child(2):hover
-	{
-	    background: #b2b2b2;
-		color: #222;
+		color: white;
 	}
 	
 	main
@@ -777,13 +781,6 @@ html {
 	left:5%;
 	animation: animate 12s linear infinite;
 }
-
-
-
-
-
-
-
 
 @keyframes animate
 {
