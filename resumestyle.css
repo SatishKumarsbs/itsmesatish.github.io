@@ -442,7 +442,7 @@ html {
 	{
 	background-image: url("map.jpg");
 	background-repeat: no-repeat;
-	//opacity: 0.5;
+	opacity: 0.8;
 	filter: alpha(opacity=50); /* For IE8 and earlier */
 	background-position: right top;
 	min-height:600px;
@@ -854,8 +854,8 @@ html {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background:#A569BD    ;
-	//opacity: 0.5;
+	background:black;
+	opacity: 1.5;
 }
 
 .box:before
