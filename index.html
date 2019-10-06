@@ -12,14 +12,6 @@
 	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	
 	
-	
-	
-
-	
-	
-	
-	
-		
 </head>
 <body>
 
@@ -37,42 +29,54 @@
 	
 
     <aside>
-	    <nav>
+	    <nav class="navmenu">
+		
 		    <img src="satish1.jpg" alt="">
+			<li class="active">
 			<a href="#home"><i class="material-icons md-36">home</i>
 		    <p>Home</p>
 			</a>
+			</li>
 			
+			<li>
 			<a href="#about"><i class="material-icons md-36">person</i>
 		    <p>About</p>
 			</a>
+			</li>
 			
-			<a href="#academic"><i class="material-icons md-36">school</i>
+			<li><a href="#academic"><i class="material-icons md-36">school</i>
 		    <p>Education</p>
 			</a>
+			</li>
 			
-			
-			<a href="#experience"><i class="material-icons md-36">work</i>
+			<li><a href="#experience"><i class="material-icons md-36">work</i>
 		    <p>Experience</p>
 			</a>
+			</li>
 			
 			
 			
-			
-			<a href="#skills1"><i class="material-icons md-36">laptop</i>
+			<li><a href="#skills1"><i class="material-icons md-36">laptop</i>
 		    <p>Skills</p>
 			</a>
+			</li>
 			
-			<a href="#folio"><i class="material-icons md-36">image</i>
+			<li><a href="#folio"><i class="material-icons md-36">image</i>
 		    <p>Folio</p>
 			</a>
+			</li>
 			
-			<a href="#contact"><i class="material-icons md-36">mail</i>
+			<li><a href="#contact"><i class="material-icons md-36">mail</i>
 		    <p>Contact</p>
 			</a>
+			</li>
 			
-			
-		
+		<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+		<script type="text/javascript">
+		$(document).on('click','nav li', function(){
+		$(this).addClass('active').siblings().removeClass('active')
+		})
+		</script>
 		</nav>
 		</aside>
 		
@@ -106,6 +110,7 @@
             <h2>About Me</h2> 
 			
 			<p class="line">
+			
 			    <b>Hello, I'am Satish </b> I'am Designer and Developer,
 				Life Long Learner, 
 				and Ready For New Opportunities.
@@ -201,7 +206,7 @@
 		<center>
 		<p>  
 			<i class="material-icons md-32">apartment</i> <b style="font-size:25px">Softpro India Lucknow</b><br>
-			<a href="http://www.softproindia.org/" target="_blank">Visit Softpro India </a>
+			<a href="http://www.softproindia.org/" target="_blank" style="color:black">Visit Softpro India </a>
 		</p>  
 	    
         <p><b>Intern (Java)</b></p>
