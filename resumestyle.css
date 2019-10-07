@@ -343,42 +343,146 @@ html {
 	
 	}
 	
-	.skills
-	{
-	    text-align:center;
-		padding-right: 20px;
-		line-height: 30px;
-		color: white;
-		background-color: #009688;
-	}
 	
-	.java
+
+.skills
+{
+width:600px;
+margin:20px auto;
+color: white;
+}
+.skills li
+{
+margin:20px 0;
+list-style:none;
+}
+.bar
+{
+background: #353b48;
+display: block;
+height:10px;
+border:1px solid rgba(0,0,0,0.5);
+border-radius:3px;
+//overflow: hidden;
+box-shadow:0 0 10px #2187e7b3;
+}
+
+.bar span
+{
+height:8px;
+float:left;
+background: white;
+border-radius:3px;
+}
+
+.java
+{
+width:85%;
+animation: java 2s;
+}
+
+@keyframes java
+{
+    0%
+	{
+	width: 0%;
+	}
+	100%
 	{
 	width:85%;
 	}
-	
-	.jsp
+}
+
+
+.jsp
+{
+width:70%;
+animation: jsp 2s;
+}
+
+@keyframes jsp
+{
+    0%
+	{
+	width: 0%;
+	}
+	100%
 	{
 	width:70%;
 	}
-	
-	.html{
-	    width: 90%;
-	}
-	
-	.css
+}
+
+
+.html
+{
+width:90%;
+animation: html 2s;
+}
+@keyframes html
+{
+    0%
 	{
-	width:85%;
+	width: 0%;
 	}
-	
-	.Javascript{
-	    width:70%;
-	}
-	
-	.datastructure
+	100%
 	{
-	    width:50%;
+	width:90%;
 	}
+}
+
+.css
+{
+width:90%;
+animation: css 2s;
+}
+
+@keyframes css
+{
+    0%
+	{
+	width: 0%;
+	}
+	100%
+	{
+	width:90%;
+	}
+}
+	
+.javascript
+{
+width:75%;
+animation: javascript 2s;
+}
+
+@keyframes javascript
+{
+    0%
+	{
+	width: 0%;
+	}
+	100%
+	{
+	width:75%;
+	}
+}	
+	
+.datastructure
+{
+width:50%;
+animation: datastructure 2s;
+}
+
+@keyframes datastructure	
+{
+    0%
+	{
+	width: 0%;
+	}
+	100%
+	{
+	width:50%;
+	}
+}	
 	
 	.folio h3{
 	    color: width;
@@ -708,7 +812,8 @@ html {
 
 
 
-.bgPulse span
+.bgPulse 
+.span_bgPulse
 { 
 	position: absolute;
 	width: 80px;
@@ -718,7 +823,8 @@ html {
 	
 }
 
-.bgPulse span:nth-child(3n+1)
+.bgPulse 
+.span_bgPulse:nth-child(3n+1)
 {
 	background:transparent;
 	border: 5px solid #fff;
@@ -726,95 +832,141 @@ html {
 
 
 
-.bgPulse span:nth-child(1)
+.bgPulse 
+.span_bgPulse:nth-child(1)
 {
 	top:220px;
 	left:20%;
 	animation: animate 10s linear infinite;
 }
-.bgPulse span:nth-child(2)
+.bgPulse 
+.span_bgPulse:nth-child(2)
 {
 	top:400px;
 	left:40%;
 	animation: animate 12s linear infinite;
 }
 
-.bgPulse span:nth-child(3)
+.bgPulse 
+.span_bgPulse:nth-child(3)
 {
 	top:70px;
 	left:65%;
 	animation: animate 15s linear infinite;
 }
 
-.bgPulse span:nth-child(4)
+.bgPulse 
+.span_bgPulse:nth-child(4)
 {
 	top:300px;
 	left:70%;
 	animation: animate 6s linear infinite;
 }
 
-.bgPulse span:nth-child(5)
+.bgPulse 
+.span_bgPulse:nth-child(5)
 {
 	top:330px;
 	left:30%;
 	animation: animate 9s linear infinite;
 }
 
-.bgPulse span:nth-child(6)
+.bgPulse 
+.span_bgPulse:nth-child(6)
 {
 	top:400px;
 	left:95%;
 	animation: animate 8s linear infinite;
 }
 
-.bgPulse span:nth-child(7)
+.bgPulse 
+.span_bgPulse:nth-child(7)
 {
 	top:490px;
 	left:5%;
 	animation: animate 5s linear infinite;
 }
 
-.bgPulse span:nth-child(8)
+.bgPulse 
+.span_bgPulse:nth-child(8)
 {
 	top:60px;
 	left:45%;
 	animation: animate 14s linear infinite;
 }
 
-.bgPulse span:nth-child(9)
+.bgPulse 
+.span_bgPulse:nth-child(9)
 {
 	top:340px;
 	left:80%;
 	animation: animate 11s linear infinite;
 }
 
-.bgPulse span:nth-child(10)
+.bgPulse 
+.span_bgPulse:nth-child(10)
 {
 	top:500px;
 	left:90%;
 	animation: animate 12s linear infinite;
 }
 
-.bgPulse span:nth-child(11)
+.bgPulse 
+.span_bgPulse:nth-child(11)
 {
 	top:500px;
 	left:20%;
 	animation: animate 12s linear infinite;
 }
 
-.bgPulse span:nth-child(12)
+.bgPulse 
+.span_bgPulse:nth-child(12)
 {
 	top:300px;
 	left:5%;
 	animation: animate 12s linear infinite;
 }
+ 
+.bgPulse 
+.span_bgPulse:nth-child(13)
+{
+	top:45px;
+	left:85%;
+	animation: animate 12s linear infinite;
+}
+
+.bgPulse 
+.span_bgPulse:nth-child(14)
+{
+	top:50px;
+	left:90%;
+	animation: animate 12s linear infinite;
+}
+
+.bgPulse 
+.span_bgPulse:nth-child(15)
+{
+	top:50px;
+	left:5%;
+	animation: animate 12s linear infinite;
+}
+
+.bgPulse 
+.span_bgPulse:nth-child(16)
+{
+	top:50px;
+	left:10%;
+	animation: animate 12s linear infinite;
+}
 
 
-
-
-
-
-
+.bgPulse 
+.span_bgPulse:nth-child(17)
+{
+	top:500px;
+	left:65%;
+	animation: animate 12s linear infinite;
+}
 
 @keyframes animate
 {
@@ -833,28 +985,19 @@ html {
 
 
 
-
-
-
-
-
-
-
-
-
-
 .box
 {
-	margin-top:30px;
+	margin-top:10px;
 	//margin-left:200px;
 	position: relative;
-	width: 80%;
+	width: 90%;
 	border-radius: 8px;
 	height:auto;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background:black;
+	//background:#333;
+	animation: bgColoraside 20s linear infinite;
 	opacity: 1.5;
 }
 
@@ -887,7 +1030,7 @@ html {
 .box:before,
 .box:after
 {
-	background: linear-gradient(235deg,#89ff00,#060c21,#00bcd4);
+	background: linear-gradient(235deg,#FFD700,#FF8C00,#FFA500);
 	
 }
 
@@ -897,16 +1040,3 @@ html {
 	box-sizing: border-box;
 	color:#fff;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
