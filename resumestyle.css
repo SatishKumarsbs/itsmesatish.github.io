@@ -378,13 +378,50 @@ background: white;
 border-radius:3px;
 }
 
-.java
+.corejava
 {
-width:85%;
-animation: java 2s;
+width:90%;
+animation: corejava 2s;
 }
 
-@keyframes java
+@keyframes corejava
+{
+    0%
+	{
+	width: 0%;
+	}
+	100%
+	{
+	width:90%;
+	}
+}
+
+
+.html5
+{
+width:90%;
+animation: html5 2s;
+}
+
+@keyframes html5
+{
+    0%
+	{
+	width: 0%;
+	}
+	100%
+	{
+	width:90%;
+	}
+}
+
+
+.css3
+{
+width:85%;
+animation: css3 2s;
+}
+@keyframes css3
 {
     0%
 	{
@@ -396,14 +433,13 @@ animation: java 2s;
 	}
 }
 
-
-.jsp
+.reactjs
 {
-width:70%;
-animation: jsp 2s;
+width:80%;
+animation: reactjs 2s;
 }
 
-@keyframes jsp
+@keyframes reactjs
 {
     0%
 	{
@@ -411,43 +447,7 @@ animation: jsp 2s;
 	}
 	100%
 	{
-	width:70%;
-	}
-}
-
-
-.html
-{
-width:90%;
-animation: html 2s;
-}
-@keyframes html
-{
-    0%
-	{
-	width: 0%;
-	}
-	100%
-	{
-	width:90%;
-	}
-}
-
-.css
-{
-width:90%;
-animation: css 2s;
-}
-
-@keyframes css
-{
-    0%
-	{
-	width: 0%;
-	}
-	100%
-	{
-	width:90%;
+	width:80%;
 	}
 }
 	
@@ -469,13 +469,13 @@ animation: javascript 2s;
 	}
 }	
 	
-.datastructure
+.nodejs
 {
-width:50%;
-animation: datastructure 2s;
+width:75%;
+animation: nodejs 2s;
 }
 
-@keyframes datastructure	
+@keyframes nodejs	
 {
     0%
 	{
@@ -483,9 +483,63 @@ animation: datastructure 2s;
 	}
 	100%
 	{
-	width:50%;
+	width:75%;
 	}
-}	
+}
+
+.expressjs
+{
+width:80%;
+animation: expressjs 2s;
+}
+
+@keyframes expressjs	
+{
+    0%
+	{
+	width: 0%;
+	}
+	100%
+	{
+	width:80%;
+	}
+}
+
+.mongodb
+{
+width:90%;
+animation: mongodb 2s;
+}
+
+@keyframes mongodb	
+{
+    0%
+	{
+	width: 0%;
+	}
+	100%
+	{
+	width:90%;
+	}
+}
+
+.mysql
+{
+width:95%;
+animation: mysql 2s;
+}
+
+@keyframes mysql	
+{
+    0%
+	{
+	width: 0%;
+	}
+	100%
+	{
+	width:95%;
+	}
+}
 	
 	.folio h3{
 	    color: width;
